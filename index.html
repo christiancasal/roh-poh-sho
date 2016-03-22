@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>roh-poh-sho</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+      <!-- Firebase Reference -->
+  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+  </head>
+  <body>
+      <div id="fullSiteContainer" class="container-fluid">
+        <h1>roh-poh-sho!</h1>
+        <div id="mainPlayerContainer" class="row">
+          <div id="player1Div" class="col-md-4 playerContainer">
+          <h2 id="namePlayer1" class="playerName">Player 1</h2>
+            <img id="choiceImagePlayer1" class="choiceImage" src="css/images/rock1.png">
+            <div id="player1ChoiceContainer" class="choiceContainer col-md-12 btn-group">
+              <a id="rockPlayer1" class="btn btn-default btn-sm playerChoice player1Choice col-md-4">roh!</a>
+              <a id="paperPlayer1" class="btn btn-default btn-sm playerChoice player1Choice col-md-4">poh!</a>
+              <a id="scissorPlayer1" class="btn btn-default btn-sm playerChoice player1Choice col-md-4">sho!</a>
+              <a id="shoot" class="btn btn-default btn-sm playerChoice confirmation col-md-12">(shoot)</a>
+              <br>
+            </div>
+            <div id="player1ResultContainer" class="resultsContainer col-md-12">
+              <span id="player1Wins" class="winsLosses">Wins:</span>
+              <span id="player1Losses" class="winsLosses">Loss:</span>
+            </div>  
+          </div>
+          
+
+          <div id="resultsDiv" class="col-md-4">
+            <div id="spacerRowTop"class="row">
+              <span id="resultTop" class="results"></span>
+            </div>
+
+          <div id="spacerRowBottom"class="row">
+              <span id="resultBottom" class="results"></span>
+            </div>
+          </div>
+          
+
+          <div id="player2Div" class="col-md-4 playerContainer">
+            <h2 id="namePlayer2" class="playerName">waiting...</h2>
+            <div id="player2ChoiceContainer" class="choiceContainer col-md-12 btn-group">
+              <img id="choiceImagePlayer2" class="choiceImage" src="css/images/rock2.png">
+              <br>
+            </div>
+            <div id="player2ResultContainer" class="resultsContainer col-md-12">
+              <span id="player2Wins" class="winsLosses">Wins:</span>
+              <span id="player2Losses" class="winsLosses">Losses:</span>
+            </div>  
+          </div>  
+        </div><!-- end of main player container -->
+        <div id="chatRowContainer" class="row">
+          <div id="chatContainer" class="col-md-4 col-md-offset-4">
+            <textarea id="chatBox" class="form-control chatDisplay" rows="5" disabled></textarea>
+            <br>
+            <form>
+            <div class="input-group">              
+              <input id="chatInput" type="text" class="form-control" autocomplete="off"></input>
+              <span class="input-group-btn">
+                <button id="chatInputSubmit" class="btn btn-default" type="submit">Send
+                </button>
+              </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
